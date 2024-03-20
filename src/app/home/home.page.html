@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title class= "top">
+      My Page
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,6 +14,9 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
+    <strong>SELECT BUTTON<br></strong>
+    <ion-button href="another-page">Go By Link</ion-button><br>
+    <ion-button (click)="goToMyCustomPage()">Go By Event</ion-button><br>
+    <ion-button (click)="goWithAuthorization()">Authenticate</ion-button><br>
   </div>
 </ion-content>
